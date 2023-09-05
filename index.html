@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    <!-- <script src="./StringMethod.js"></script> -->
+    <script src="./ArrayMethod.js"></script>
+
+
     <!-- <script src="./DOM.js"></script> -->
     <!-- <script src="./hoisting.js"></script> -->
     <!-- <script src="./nested_obj.js"></script> -->
@@ -24,6 +29,12 @@
     
 </head>
 <body>
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About</li>
+    </ul>
 
     <h2 id="ele">Hello Buddy</h2>
 
@@ -120,13 +131,27 @@
         // add text by property
         
         
-        let elm =  document.getElementById("ele");
-        let h1 = document.createElement('h1');
-        h1.textContent = "hello i am using whatsapp!!";
-        h1.appendChild(text);
-        elm.appendChild(h1);
+        // let elm =  document.getElementById("ele");
+        // let h1 = document.createElement('h1');
+        // h1.textContent = "hello i am using whatsapp!!";
+        // h1.appendChild(text);
+        // elm.appendChild(h1);
 
+        // let elm = document.getElementById("ele");
+        // let h1 = document.createElement('h1');
+        // h1.textContent = "hello adnan";
+        // let eli = document.getElementsByTagName('h2');
 
+        // elm.insertBefore(h1, eli);
+
+        // let remove = document.getElementById("menu");
+        // let child = remove.firstElementChild;  
+        // remove.removeChild(child);
+
+        let ele = document.getElementById("menu");
+        let clone = ele.cloneNode(true);
+        // console.log(clone);
+        document.body.appendChild(clone); //replaceChild
     </script>
 </body>
 </html>
